@@ -1,0 +1,27 @@
+.conversation{
+    border: 0px;
+    min-height: 90vh;
+    border-radius: 10px;
+    display: block;
+    background-color: rgb(222, 222, 222);;
+}
+
+.conversation .conv_display{
+    background-color:rgb(244, 234, 248);
+    border-radius: 10px;
+    height: 80vh;
+    overflow: auto;
+}
+
+.conversation .conv_display audio{
+    width: 100%;
+}
+.conversation .conv_footer{
+    display:block;
+    text-align: center;
+    margin-top: 10px;
+    margin: 10px;
+    align-content: end;
+    
+    
+}

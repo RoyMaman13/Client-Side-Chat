@@ -1,0 +1,132 @@
+.chat-list{
+    max-height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin-right: 10px;
+}
+
+.chatlist-header {
+    width: 100%;
+    font-size: calc(10px + 2vmin);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.chatlist-header img {
+    margin: 0.25em;
+    width: 40px;
+    height: auto;
+}
+
+.chatlist-header button {
+    float: right;
+    border: 0px;
+    background-color:inherit;
+    width: auto;
+}
+
+.chatlist-header .popup img {
+    width: 30px;
+}
+
+.chatlist-header .popup:hover,
+.chatlist-header .popup.active{
+        background: rgb(210, 210, 210);
+        border-color: #000000;
+        border-radius: 10px;
+}
+.chatlist_items {
+    margin-top: 0px;
+    overflow: auto;
+    min-height: auto;
+    max-height: 80vh;
+    font-size: small;
+    display: grid;
+    grid-column: auto;
+}
+
+.chatlist_item {
+    align-items:flex-start;
+    text-align:start;
+    width: 100%;
+    display:inline-flex;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    transition: all 0.3s cubic-bezier(0.88, 0.19, 0.37, 1.11);
+    transform: scale(0);
+    animation-name: showIn;
+    animation-duration: 0.2s;
+    /* or: Xms */
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    /* or: normal */
+    animation-timing-function: cubic-bezier(0.88,
+            0.19,
+            0.37,
+            1.11);
+    /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+    animation-fill-mode: both;
+    /* or: backwards, both, none */
+    animation-delay: 0.1s;
+    /* or: Xms */
+    width: 100%;
+}
+
+.chatlist_item:first-child {
+    margin-top: 0;
+}
+
+.chatlist_item:hover,
+.chatlist_item.active {
+    background: rgb(210, 210, 210);
+
+    border-radius: 10px;
+}
+
+.chatlist_item img {
+    margin-right: 10px;
+}
+
+.chatlist_item span {
+    display:inline-flex;
+}
+
+.chatlist_item .chat_info{
+    display: inline-block;
+    margin: 0px;;
+    width: 100%;
+    /* overflow-x:visible; */
+}
+.chatlist_item .chat_info .chat_meta{
+    width: 100%;
+
+}
+
+.chatlist_item .chat_info .chat_meta .nick {
+    margin-right: auto;
+    font-size: medium;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.chatlist_item .chat_info .chat_meta .time{
+margin-left: auto;
+}
+
+@keyframes showIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.chat_msg audio {
+    margin: 5px;
+    width: 20vh;
+    height: 30px;
+}
